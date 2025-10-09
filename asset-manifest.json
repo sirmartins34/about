@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/about/static/css/main.694bb24b.css",
+    "main.js": "/about/static/js/main.ee336535.js",
+    "static/js/488.725be7e8.chunk.js": "/about/static/js/488.725be7e8.chunk.js",
+    "static/media/rules.png": "/about/static/media/rules.a311454fe827029a4a2e.png",
+    "static/media/credits.png": "/about/static/media/credits.a7ec58a0f4c3a1a24d67.png",
+    "static/media/settingsWithMusic.png": "/about/static/media/settingsWithMusic.042b52fefe48f2370a9a.png",
+    "static/media/settingsWithoutMusic.png": "/about/static/media/settingsWithoutMusic.4212f7caf5a2c034b159.png",
+    "static/media/menuEN.png": "/about/static/media/menuEN.27a34e941977920ec7ff.png",
+    "static/media/menuJP.png": "/about/static/media/menuJP.80d2f5fc370518f7d6a5.png",
+    "static/media/langSelection.png": "/about/static/media/langSelection.5654e4bc49b894371ac5.png",
+    "static/media/gameWin.png": "/about/static/media/gameWin.6a9c6a3cb17e8219765e.png",
+    "static/media/gameMovement.png": "/about/static/media/gameMovement.6ac0df2f600ff849ee22.png",
+    "static/media/gameInitial.png": "/about/static/media/gameInitial.12acdef958d1fac2e077.png",
+    "static/media/splash.png": "/about/static/media/splash.9986bd769a111f7b9afa.png",
+    "static/media/self.png": "/about/static/media/self.aee462936ba9b2cd418f.png",
+    "index.html": "/about/index.html",
+    "main.694bb24b.css.map": "/about/static/css/main.694bb24b.css.map",
+    "main.ee336535.js.map": "/about/static/js/main.ee336535.js.map",
+    "488.725be7e8.chunk.js.map": "/about/static/js/488.725be7e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.694bb24b.css",
+    "static/js/main.ee336535.js"
+  ]
+}

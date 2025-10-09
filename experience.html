@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" height="100%">
+<head>
+    <title>Curriculum Vitae</title>
+<!--    <script src="http://localhost:49689/raphael-min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+-->
+	<script src="raphael-min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script> -->
+	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+	<script src="data.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+	#cvCanvas
+	{
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	</style>
+</head>
+<body style="background-color:background-color: rgba(255, 255, 255, 0);;margin:0;padding:0;" height="100%" onresize="onResize();">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center">
+			<table width="70%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<div id="cvCanvas" style="width:100%;height:99vh;"></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<!-- <div id="div_using" style="position: fixed !important; position: absolute; bottom: 1em;left: 1em;">
+	<table width="100%" style="font: 12px Fontin-Sans, Arial; color: #fff">
+		<tr>
+			<td align="left">Using:</td>
+		</tr>
+	</table>
+	<a href="http://raphaeljs.com/" target="_blank" tooltip="Raphael JS">
+		<div style="width:50px; height:50px;">
+			<svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="#f89938" stroke="none" d="M49.973,94.128C44.760999999999996,94.128,39.86,92.099,36.174,88.411L11.424,63.661C7.734,59.976,5.701,55.074,5.701,49.859C5.701,44.643,7.734,39.74,11.425,36.053000000000004L36.175,11.304000000000006C39.861,7.617000000000006,44.76,5.589000000000006,49.973,5.589000000000006C55.185,5.589000000000006,60.086,7.617000000000006,63.772999999999996,11.303000000000006L88.52199999999999,36.05500000000001C92.21199999999999,39.73800000000001,94.24699999999999,44.641000000000005,94.24699999999999,49.858000000000004C94.24699999999999,55.075,92.21299999999998,59.977000000000004,88.52099999999999,63.663000000000004L63.772,88.411C60.086,92.099,55.185,94.128,49.973,94.128L49.973,94.128Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="#3399ff" stroke="none" d="M33.014,23.398C33.014,14.032,40.607,6.439,49.973,6.439C59.34,6.439,66.932,14.032,66.932,23.398C66.932,32.765,59.34,40.357,49.973,40.357C40.606,40.358,33.014,32.765,33.014,23.398" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="#333333" stroke="none" d="M93.816,61.314C96.046,57.943,97.24600000000001,53.994,97.24600000000001,49.859C97.24600000000001,44.288000000000004,95.07400000000001,39.053000000000004,91.13400000000001,35.121L64.707,8.691L64.69699999999999,8.701C60.92599999999999,4.924,55.71799999999999,2.5840000000000005,49.97199999999999,2.5840000000000005S39.019,4.925,35.249,8.702L35.24,8.692L8.813,35.118C4.872000000000001,39.055,2.7010000000000005,44.290000000000006,2.7010000000000005,49.859C2.7010000000000005,55.427,4.871,60.662000000000006,8.811,64.596L32.64,88.42500000000001C33.595,89.49700000000001,34.599000000000004,90.50000000000001,35.657000000000004,91.42200000000001C39.542,95.10300000000001,44.6,97.12700000000001,49.972,97.12700000000001C55.537,97.12700000000001,60.771,94.96000000000001,64.706,91.02300000000001L90.416,65.31400000000001C90.481,65.25000000000001,90.54599999999999,65.18400000000001,90.61099999999999,65.11900000000001L91.13199999999999,64.59900000000002C92.12499999999999,63.60800000000002,93.005,62.533000000000015,93.767,61.39200000000002C93.785,61.36700000000002,93.804,61.34300000000002,93.823,61.31800000000002L93.816,61.314ZM89.535,49.859C89.535,52.451,88.783,54.925000000000004,87.39099999999999,57.043C86.556,58.183,85.68499999999999,59.179,84.78699999999999,60.04L84.723,60.104C80.496,64.125,75.72,65.264,71.667,65.264C69.437,65.264,67.424,64.91799999999999,65.842,64.51899999999999C56.579,62.17899999999999,46.51,54.20799999999999,41.902,42.58299999999999C44.385,43.63199999999999,47.112,44.21199999999999,49.972,44.21199999999999C60.719,44.21199999999999,69.588,36.02499999999999,70.674,25.56199999999999L85.683,40.56999999999999C88.167,43.053,89.535,46.351,89.535,49.859ZM49.973,10.294C57.2,10.294,63.077,16.173000000000002,63.077,23.398C63.077,30.624,57.199,36.503,49.973,36.503C42.748,36.503,36.87,30.624000000000002,36.87,23.398C36.87,16.173,42.748,10.294,49.973,10.294ZM14.262,59.146C11.779,56.665,10.411000000000001,53.367000000000004,10.411000000000001,49.86C10.411000000000001,46.352,11.778000000000002,43.054,14.261000000000001,40.574L24.415,30.418999999999997C21.765,39.440999999999995,20.627,48.934999999999995,21.237,58.036C21.456,61.307,21.907999999999998,64.44500000000001,22.558,67.44L14.262,59.146ZM31.621,33.206C33.851,50.655,47.663,67.878,63.95399999999999,71.995C66.60799999999999,72.665,69.21,72.995,71.72699999999999,72.995C71.76299999999999,72.995,71.79999999999998,72.992,71.83599999999998,72.992L59.255999999999986,85.57300000000001C56.774999999999984,88.052,53.47799999999999,89.418,49.97199999999999,89.418C47.530999999999985,89.418,45.198999999999984,88.742,43.16699999999999,87.504L43.170999999999985,87.497C42.37099999999999,86.967,41.60899999999999,86.368,40.86799999999999,85.734C40.80999999999999,85.67699999999999,40.74799999999999,85.63,40.69099999999999,85.573L38.14899999999999,83.03099999999999C32.92199999999998,77.02999999999999,29.634999999999987,68.101,28.927999999999987,57.52099999999999C28.393,49.515,29.354,41.167,31.621,33.206" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path></svg>
+		</div>
+	</a>
+</div> -->
+
+
+<script type="text/javascript">
+function WrapText(text, maxWidth)
+{
+	var words = text.split(" ");
+	var t = paper.text(100, 100).attr('text-anchor', 'start');
+
+	var tempText = "";
+	for (var i=0; i<words.length; i++) {
+	  t.attr("text", tempText + " " + words[i]);
+	  if (t.getBBox().width > maxWidth) {
+		tempText += "\n" + words[i];
+	  } else {
+		tempText += " " + words[i];
+	  }
+	}
+	t.remove();
+	return tempText;
+}
+
+
+function MonthDiff(d1, d2) {
+    var months;
+    months = (d2.getFullYear() - d1.getFullYear()) * 12;
+    months -= d1.getMonth() + 1;
+    months += d2.getMonth();
+    return months <= 0 ? 0 : months;
+}
+
+
+function FormatProject(project) {
+	var ret = project.description;
+	if (project.tools)
+		ret += "\nTools: " + project.tools;
+	if (project.contextEngineering)
+		ret += "\nContext Engineering: " + project.contextEngineering;
+	if (project.languages)
+		ret += "\nLanguages: " + project.languages;
+
+	return ret;
+}
+function AssemblyTextForExperienceProjects(list) {
+	return list.map((project, index) => FormatProject(project))
+				.join('\n\t\n');
+				// .reduce(function(pre, cur) {
+				// 	return pre.concat(cur);
+				// });
+};
+
+</script>
+
+
+<script type="text/javascript">
+	var buttonSize = 50;
+	var mainWindowMargin = 70;
+	var mainWindowRound = 60;
+
+	var experienceYearStart = 2000;
+	var experienceYearEnd = new Date().getFullYear();
+	var experienceMonthEnd = new Date().getMonth() + 1;
+
+
+
+
+
+	var graphPaddingLeft = 20;
+	var graphPaddingBottom = 50;
+	var numberGraphMarkersize = 9;
+	var numberGraphMarkers = 5;
+	var graphSeparator = 5;
+	var selectedOptionColor = '#ED3100';
+
+	var btnsFont = {font: "14px Fontin-Sans, Arial", fill: "#fff", "text-anchor": "start", opacity:0.3};
+	var btnIconAttr = {fill: "#000", stroke: "none"};
+	var defaultFontTitle = {font: "12px Arial", fill: "#fff", "text-anchor": "start"};
+	var defaultFont = {font: "12px Arial", fill: "#ccc", "text-anchor": "start"};
+	var experienceGraphFont = { font: "10px Arial", fill: "#ccc", "text-anchor": "middle" };
+	var skillGraphFont = { font: "10px Arial", fill: "#ccc", "text-anchor": "end" };
+	var graphFontYY = {font: "12px Arial", fill: "#ccc", "text-anchor": "start"};
+	var graphFontXX = {font: "10px Arial", fill: "#ccc", "text-anchor": "end"};
+
+	var windowRect = {
+						x: mainWindowMargin + (mainWindowRound/2),
+						y: mainWindowMargin + (mainWindowRound/2),
+						w: $('#cvCanvas').width() - mainWindowMargin*2,
+						//h: $('#cvCanvas').height() - mainWindowMargin*2
+						h: document.documentElement.clientHeight - mainWindowMargin*2 - 5
+					};
+	var selectedOptionBtn = undefined;
+	var selectedOptionTxt = undefined;
+	var selectedOptionIcon = undefined;
+	
+	var workExperienceItem = new Array();
+	var workExperienceLabel = null;
+	var workExperienceLabelPosX = null;
+	var workExperienceLabelPosY = null;
+	var workExperienceDescription = null;
+	var visibleMainControls = null;
+
+	
+	
+	
+
+	//verify if browser supports SVG
+	if (!Raphael.svg && !Raphael.vml)
+	{
+		alert("Sorry. You browser does not support SVG or VML.");
+	}
+	else
+	{
+		// Creates canvas
+		var paper = Raphael("cvCanvas", windowRect.w + mainWindowMargin*2, windowRect.h + mainWindowMargin*2); // id, w, h
+
+
+		function showWorkExperienceDescription(pos) {
+			var loc = WrapText(experience[pos].local, windowRect.w - (mainWindowMargin*3));
+			var projectsText = AssemblyTextForExperienceProjects(experience[pos].projects);
+			var desc = WrapText(projectsText, windowRect.w - (mainWindowMargin*3));
+			
+			var posLoc = workExperienceLabelPosY - 40 - ((loc.split("\n").length/2) * (12)) + (loc.split("\n").length * (16));
+			var posDesc = workExperienceLabelPosY -
+				((desc.split("\n").length/2) * (12)) + (desc.split("\n").length * (12 + 1));
+			if (loc.split("\n").length > 1)
+				posDesc += (loc.split("\n").length * 12);
+
+			var animWE1 = Raphael.animation({x: workExperienceLabelPosX+30, opacity:0}, 200, 'linear',
+				function() { this.attr({ x:workExperienceLabelPosX, y: posLoc, text: loc })});
+			var animWE2 = Raphael.animation({opacity:1}, 0, 'linear',
+				function() { workExperienceDescription.attr({ opacity:1, text: desc, y: posDesc })});
+			var animated1 = workExperienceLabel.animate(animWE1); // run the given animation immediately
+			var animated2 = workExperienceLabel.animate(animWE2.delay(300)); // r
+
+			
+			workExperienceDescription.animateWith(animated1, animWE1, {opacity:0}); // run the given animation immediately
+		}
+		function SetWorkExperience() {
+			var newVisibleMainControls = paper.set();
+
+			var numberGraphExpYearSpace = ((windowRect.x + windowRect.w - mainWindowRound) - (windowRect.x)) / ((experienceYearEnd+1) - experienceYearStart);
+
+			var maxRows = 0;
+			for (var i = 0; i < experience.length; i++) {
+				if (maxRows < parseInt(experience[i].row))
+					maxRows = parseInt(experience[i].row);
+			}
+			maxRows++;
+			var graphSetYPos = maxRows * 22;
+
+
+			workExperienceLabel = paper.text(windowRect.x-10, windowRect.y+20+graphSetYPos+50,"(select graph for detail)").attr(graphFontYY).attr({'text-anchor': 'start'});
+			workExperienceLabelPosX = workExperienceLabel.getBBox().x;
+			workExperienceDescription = paper.text(windowRect.x-10, windowRect.y+20+graphSetYPos+85,"\u00a0").attr(graphFontYY).attr({'text-anchor': 'start'});
+			workExperienceLabelPosY = workExperienceDescription.getBBox().y;
+			newVisibleMainControls.push(
+				workExperienceLabel.attr({ font: "16px Fontin-Sans, Arial", fill: "#fff", "text-anchor": 'start', opacity:1 }),
+				workExperienceDescription.attr({ font: "12px Fontin-Sans, Arial", fill: "#ccc", "text-anchor": 'start', opacity:1 })
+			);
+
+			
+			for (var i = 0; i < experience.length; i++) {
+			    var yearInit = Math.floor(experience[i].init);
+			    var monthInit = experience[i].init.toString().replace(/^[^\.]+/, '0')*100;
+
+				var yearEnd = experienceYearEnd;
+				var monthEnd = experienceMonthEnd;
+				if (experience[i].end !== undefined) {
+					yearEnd = Math.floor(experience[i].end);
+					monthEnd = experience[i].end.toString().replace(/^[^\.]+/, '0')*100;
+				}
+
+				var dateInit = new Date(yearInit, monthInit-1, 1);
+				var dateEnd = new Date(yearEnd, monthEnd-1, 1);
+				var difMonths = MonthDiff(dateInit, dateEnd);
+
+				var animGraph = Raphael.animation({ width: ((yearEnd - experienceYearStart + ((monthEnd - 1) / 11)) * numberGraphExpYearSpace) - ((yearInit - experienceYearStart + ((monthInit - 1) / 11)) * numberGraphExpYearSpace) },
+					300 + difMonths * 10);
+				var animText = Raphael.animation({ opacity: 1 },
+					300 + difMonths * 10);
+
+				var color = Raphael.getRGB(experience[i].color);
+				var hslColor = Raphael.rgb2hsb(color.r, color.g, color.b);
+				var hightlightColor = Raphael.hsb2rgb(hslColor.h, hslColor.s, parseFloat(hslColor.b)+experience[i].hightlightBrightness).hex;
+				workExperienceItem[i] = paper.rect(windowRect.x + 1 + ((yearInit - experienceYearStart + ((monthInit - 1) / 11)) * numberGraphExpYearSpace),
+                        windowRect.y + (experience[i].row*27),
+                        0,
+                        20,
+                        0)
+                        .attr({ "stroke-width": "0.3", fill: experience[i].color, title: experience[i].local })
+						.data({"pos": i, "defColor": experience[i].color, "hightlightColor": hightlightColor})
+						.animate(animGraph.delay(((yearInit - experienceYearStart + ((monthInit - 1) / 11)) * numberGraphExpYearSpace*2)))
+						.mouseover(function() { this.animate( {fill: this.data("hightlightColor")} , 200)} )
+						.mouseout(function() { this.animate( {fill: this.data("defColor")}, 200 )} )
+						.click(function() { showWorkExperienceDescription(this.data("pos")) });
+
+			    newVisibleMainControls.push(
+					workExperienceItem[i],
+					paper.text(
+						windowRect.x + 1 + ((yearInit - experienceYearStart + ((monthInit - 1) / 11)) * numberGraphExpYearSpace)
+							+ ((experience[i].textalign == "start") ? 0 :
+								((experience[i].textalign == "end") ? 
+									((((yearEnd - experienceYearStart + ((monthEnd - 1) / 11)) * numberGraphExpYearSpace) - ((yearInit - experienceYearStart + ((monthInit - 1) / 11)) * numberGraphExpYearSpace)))
+									:
+								((((yearEnd - experienceYearStart + ((monthEnd - 1) / 11)) * numberGraphExpYearSpace) - ((yearInit - experienceYearStart + ((monthInit - 1) / 11)) * numberGraphExpYearSpace)) / 2))),
+						windowRect.y + (experience[i].row*27) + 10,
+						experience[i].abrev)
+						.attr({ font: "12px Fontin-Sans, Arial", fill: "#fff", "text-anchor": experience[i].textalign, opacity:0, title: experience[i].local })
+						.data({"pos": i, "defColor": experience[i].color, "hightlightColor": hightlightColor})
+						.animate(animText.delay(((yearInit - experienceYearStart + ((monthInit - 1) / 11)) * numberGraphExpYearSpace*2)))
+						.mouseover(function() { workExperienceItem[this.data("pos")].animate( {fill: this.data("hightlightColor")} , 200)} )
+						.mouseout(function() { workExperienceItem[this.data("pos")].animate( {fill: this.data("defColor") }, 200 )} )
+						.click(function() { showWorkExperienceDescription(this.data("pos")) })
+				);
+			}
+
+
+			newVisibleMainControls.push(
+				paper.path("M" + (windowRect.x) + "," + (windowRect.y+20)
+					+ "," + (windowRect.x) + "," + (windowRect.y+20+graphSetYPos)
+					+ " " + (windowRect.x+windowRect.w-mainWindowRound) + "," +(windowRect.y+20+graphSetYPos)) // graph xx,yy
+//				,paper.text(windowRect.x+(windowRect.w/2)-mainWindowRound, windowRect.y+20+graphSetYPos+30,"Years").attr(graphFontYY) // text "Years"
+			);
+
+			for (var i = experienceYearStart; i <= (experienceYearEnd+1); i++) {
+			    newVisibleMainControls.push(
+			        paper.path("M" + (windowRect.x + ((i - experienceYearStart) * numberGraphExpYearSpace)) + "," + (windowRect.y + 20 + graphSetYPos) + ","
+                        + (windowRect.x + ((i - experienceYearStart) * numberGraphExpYearSpace)) + "," + (windowRect.y + 20 + graphSetYPos + 5))
+                );
+			    if (i < (experienceYearEnd+1)) {
+			        newVisibleMainControls.push(
+			            paper.text(windowRect.x + ((i - experienceYearStart) * numberGraphExpYearSpace) + (numberGraphExpYearSpace / 4), windowRect.y + 25 + graphSetYPos + 10, i).attr(experienceGraphFont).attr({transform:"r315"}) // add nº year
+                    );
+			    }
+			}
+
+			
+			newVisibleMainControls.changeWindow();
+		}
+
+
+		///////////////////////////
+		/// END OF MAIN BUTTONS ///
+		///////////////////////////
+
+
+
+
+
+		Raphael.st.btnSet = function(fnBtn, btn, icon, overColor, outColor, txt) {
+			this.attr({ cursor: "hand"})
+				.click(function () {
+						if (selectedOptionBtn != undefined)
+						{
+							var oldBtn = selectedOptionBtn;
+							var oldTxt = selectedOptionTxt;
+							var oldIcon = selectedOptionIcon;
+							oldBtn.animate({fill: outColor}, 300);
+							oldTxt.animate({opacity: 0.3}, 300);
+
+							oldBtn.mouseover(function () { oldBtn.animate({fill: overColor}, 300); oldTxt.animate({opacity: 1}, 300); })
+								.mouseout(function () { oldBtn.animate({fill: outColor}, 300); oldTxt.animate({opacity: 0.3}, 300); });
+
+							oldTxt.mouseover(function () { oldBtn.animate({fill: overColor}, 300); oldTxt.animate({opacity: 1}, 300); })
+								.mouseout(function () { oldBtn.animate({fill: outColor}, 300); oldTxt.animate({opacity: 0.3}, 300); });
+
+							oldIcon.mouseover(function () { oldBtn.animate({fill: overColor}, 300); oldTxt.animate({opacity: 1}, 300); })
+								.mouseout(function () { oldBtn.animate({fill: outColor}, 300); oldTxt.animate({opacity: 0.3}, 300); });
+						}
+						selectedOptionBtn = btn;
+						selectedOptionTxt = txt;
+						selectedOptionIcon = icon;
+
+						btn.stop().animate({fill: selectedOptionColor}, 300);
+						txt.stop().animate({opacity: 1}, 300);
+						btn.unmouseover()
+							.unmouseout();
+						txt.unmouseover()
+							.unmouseout();
+						icon.unmouseover()
+							.unmouseout();
+
+						fnBtn();
+					})
+				.mouseover(function () { btn.animate({fill: overColor}, 300); txt.animate({opacity: 1}, 300); })
+				.mouseout(function () { btn.animate({fill: outColor}, 300); txt.animate({opacity: 0.3}, 300); });
+		};
+
+
+
+		Raphael.st.changeWindow = function() {
+			if (visibleMainControls != null) {
+				visibleMainControls.forEach(function (el){el.animate({"fill-opacity": 0.0, opacity: 0.0},500,"backOut");});
+			}
+			this.animate({"fill-opacity":1.0},500,"backIn");
+
+			visibleMainControls = this;
+		};
+
+
+
+		function Start()
+			{
+			// button "Work Experience"
+			var btnWorkExperience = paper.rect(1,1+buttonSize*2.5,buttonSize*2.5,$('#cvCanvas').height()-buttonSize*2*2.5,0)
+				.attr({ fill: '#A50' });
+			var txtWorkExperience = paper.set();
+			txtWorkExperience.push(
+				paper.text(1+(buttonSize/2)-10, $('#cvCanvas').height()/2 + (buttonSize/2)+3, "Career").attr(btnsFont),
+				paper.text(1+(buttonSize/2)-20, $('#cvCanvas').height()/2 + (buttonSize/2) + 20, "Summary").attr(btnsFont)
+			);
+			txtWorkExperience.attr(btnsFont);
+			var iconWorkExperience = paper.path("M29.249,3.14h-9.188l-0.459,0.459v18.225l0.33,2.389H19.57v0.245h-0.307v-0.306h-0.611v0.244h-0.311v-0.367h-0.486v0.307h-1.104l-2.022-0.367v-0.92h0.858l0.302-1.47h2.728c0.188,0,0.339-0.152,0.339-0.339V7.828c0-0.187-0.149-0.338-0.339-0.338H1.591c-0.187,0-0.339,0.152-0.339,0.338V21.24c0,0.187,0.152,0.339,0.339,0.339h3.016l0.199,1.47h1.409l-3.4,3.4L2.11,27.951c0,0,2.941,1.102,6.678,1.102c3.737,0,9.679-0.857,10.476-0.857s4.84,0,4.84,0v-1.225l-0.137-1.068h1.744c-0.2,0.106-0.322,0.244-0.322,0.396v0.979c0,0.341,0.604,0.613,1.352,0.613c0.742,0,1.348-0.272,1.348-0.613v-0.979c0-0.339-0.604-0.611-1.348-0.611c-0.188,0-0.364,0.019-0.525,0.049v-0.17h-2.29l-0.055-0.432h5.382L29.249,3.14L29.249,3.14zM2.478,20.17V8.714h15.07V20.17H2.478z")
+				.attr(btnIconAttr)
+				.translate(buttonSize/2, $('#cvCanvas').height()/2 - 13.5);
+			var setWorkExperience = paper.set();
+			setWorkExperience.push(btnWorkExperience,
+				txtWorkExperience,
+				iconWorkExperience
+			);
+			setWorkExperience.btnSet(SetWorkExperience, btnWorkExperience, iconWorkExperience, '#E60', '#A50', txtWorkExperience);
+
+			// main window
+			var mainWindow = paper.rect(windowRect.x-(mainWindowRound/2), windowRect.y-(mainWindowRound/2), windowRect.w, windowRect.h, mainWindowRound)
+					.attr({ fill: [90, '#595B63', '#424449'].join("-"), stroke: "#fff", "fill-opacity": 1, "stroke-width": 2 });
+
+
+			//SetHome();
+			var evObj = document.createEvent('MouseEvents'); 
+			evObj.initEvent('click', true, false); 
+			btnWorkExperience?.node?.dispatchEvent(evObj);
+			
+			// console.log(evObj);
+			// evObj.dispose();
+		}
+
+		
+		Start();
+	}
+	
+	
+	function onResize()
+	{
+		if (!Raphael.svg && !Raphael.vml)
+		{
+//			alert("Sorry. You browser does not support SVG or VML.");
+		}
+		else
+		{
+			windowRect = {
+				x: mainWindowMargin + (mainWindowRound/2),
+				y: mainWindowMargin + (mainWindowRound/2),
+				w: $('#cvCanvas').width() - mainWindowMargin*2,
+				//h: $('#cvCanvas').height() - mainWindowMargin*2
+				h: document.documentElement.clientHeight - mainWindowMargin*2 - 5
+			};
+		
+			paper.remove();
+
+
+			selectedOptionBtn = undefined;
+			selectedOptionTxt = undefined;
+
+			workExperienceItem = new Array();
+			workExperienceLabel = null;
+			workExperienceLabelPosX = null;
+			workExperienceLabelPosY = null;
+			workExperienceDescription = null;
+			visibleMainControls = null;
+
+
+			// Creates canvas
+			paper = Raphael("cvCanvas", windowRect.w + mainWindowMargin*2, windowRect.h + mainWindowMargin*2); // id, w, h
+		}
+
+		Start();
+	}
+</script>
+
+
+
+
+</body>
+</html>

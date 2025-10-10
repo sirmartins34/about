@@ -1,16 +1,6 @@
 ﻿	var experience =
         [
 			{
-				"row": 1, "local": "University - Faculdade de Ciências e Tecnologia", "abrev": "University",
-				"color": "#00a800", "hightlightBrightness": 0.2,
-				"init": 2000.01, "end": 2002.07, "textalign": "middle",
-				"projects": [
-					{
-						"description": "BSc (Hons) in Computer Engineering with: 2:1 degree (12.2 out of 20)\nCourse completion internship with: 1:1 degree (17 out of 20)"
-					}
-				]
-			},
-			{
 				"row": 3, "local": "at Introsys – Integração de Sistemas Robóticos, SA", "abrev": "Internship",
 				"color": "#a9a900", "hightlightBrightness": 0.2,
 				"init": 2001.04, "end": 2001.08, "textalign": "start",

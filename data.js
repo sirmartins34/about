@@ -1,30 +1,6 @@
 ﻿	var experience =
         [
 			{
-				"row": 3, "local": "at Introsys – Integração de Sistemas Robóticos, SA", "abrev": "Internship",
-				"color": "#a9a900", "hightlightBrightness": 0.2,
-				"init": 2001.04, "end": 2001.08, "textalign": "start",
-				"projects": [
-					{
-						"description": "Responsible for developing a PDA (Palm®) application: analysis, planning and application development to supervise in real time the status of assembly line robots.",
-						"tools": "Eclipse",
-						"languages": "Java J2SE 1.4, Java Beans"
-					}
-				]
-			},
-			{
-				"row": 2, "local": "at Portugal Telecom - Sistemas de Informação", "abrev": "Internship",
-				"color": "#23238E", "hightlightBrightness": 0.3,
-				"init": 2001.09, "end": 2002.07, "textalign": "end",
-				"projects": [
-					{
-						"description": "Development of a process to support call centres’ operators entering faults / issues reported by customers. Through a SharePoint website, other operators were tasked with analysing each reported issue and, according to its type, allocating the corresponding resources for its resolution. At the end of the process, those same operators were also tasked with progressing the issues’ status to resolved. The process also monitored time spent in resolution and launched alerts via email to the responsible parties involved. The entire process could involve the use of several different databases, depending on the type of fault / issue and resources to be considered.\nInternship course completion assignment grade: 17 in 20.",
-						"tools": "Microsoft Server BizTalk 2004, Microsoft Visual Studio .NET 2003, Microsoft SharePoint Portal 2003, Microsoft Office InfoPath 2003, Microsoft Internet Information Services 5.1",
-						"languages": "Dot.Net C# 1.1, Biztalk workflow, Biztalk inline C#"
-					}
-				]
-			},
-			{
 				"row": 1, "local": "Portugal Telecom - Sistemas de Informação", "abrev": "PTSI",
 				"color": "#23238E", "hightlightBrightness": 0.3,
 				"init": 2002.07, "end": 2005.12, "textalign": "middle",

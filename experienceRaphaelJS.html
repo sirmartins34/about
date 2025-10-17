@@ -153,8 +153,9 @@ function MonthDiff(d1, d2) {
 			var desc = WrapText(projectsText, maxTextWidth);
 			
 			var posLoc = workExperienceLabelPosY - 40 - ((loc.split("\n").length/2) * (12)) + (loc.split("\n").length * (16));
-			var posDesc = workExperienceLabelPosY -
-				((desc.split("\n").length/2) * (12)) + (desc.split("\n").length * (12 + 1));
+			// var posDesc = workExperienceLabelPosY -
+			// 	((desc.split("\n").length/2) * (12)) + (desc.split("\n").length * (12 + 1));
+			var posDesc = posLoc + 70;
 			if (loc.split("\n").length > 1)
 				posDesc += (loc.split("\n").length * 12);
 

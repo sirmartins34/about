@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/about/static/css/main.9f58b249.css",
-    "main.js": "/about/static/js/main.64057729.js",
+    "main.css": "/about/static/css/main.f4e0f44e.css",
+    "main.js": "/about/static/js/main.a4657f59.js",
     "static/js/685.8637015c.chunk.js": "/about/static/js/685.8637015c.chunk.js",
     "static/media/rules.jpg": "/about/static/media/rules.c3053f86f1be9a49a787.jpg",
     "static/media/credits.jpg": "/about/static/media/credits.73797acc0e25b3adad48.jpg",
@@ -21,7 +21,7 @@
     "index.html": "/about/index.html"
   },
   "entrypoints": [
-    "static/css/main.9f58b249.css",
-    "static/js/main.64057729.js"
+    "static/css/main.f4e0f44e.css",
+    "static/js/main.a4657f59.js"
   ]
 }

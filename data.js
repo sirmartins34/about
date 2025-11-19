@@ -90,7 +90,7 @@
 				"projects": [
 					{
 						"description": "Multiple developments on the LTA's website. Creation of a secure Stripe Payment Gateway, featuring more than two hundred-unit tests. Development and improvement of Octopus Deploy processes (integrated with Team City). Automation of the setup of new independent branches of LTA websites via the creation of PowerShell scripts. Etc.",
-						"tools": "Microsoft Visual Studio 2020, Microsoft SQL Server 2016, Git, Microsoft Internet Information Services 7.5, Octopus Deploy, Team City, Stripe, EpiServer CMS 10, Postman, MuleSoft, Agile Scrum",
+						"tools": "Microsoft Visual Studio 2020, Microsoft SQL Server 2016, Git, Microsoft Internet Information Services 7.5, Octopus Deploy, Team City, Stripe, EpiServer CMS 10, Postman, Agile Scrum",
 						"languages": "Dot.Net C# 4.5 / 4.6, Linq, MVC, JQuery, Javascript, Angular, Transact-SQL, HTML, CSS, Rest API, Stripe API, Web services, Powershell script, MSTest framework",
 					}
 				]

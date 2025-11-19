@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/about/static/css/main.33e41fd4.css",
-    "main.js": "/about/static/js/main.1b9487da.js",
+    "main.css": "/about/static/css/main.9f58b249.css",
+    "main.js": "/about/static/js/main.d3a5ec36.js",
     "static/js/685.8637015c.chunk.js": "/about/static/js/685.8637015c.chunk.js",
-    "static/media/rules.png": "/about/static/media/rules.a311454fe827029a4a2e.png",
-    "static/media/credits.png": "/about/static/media/credits.a7ec58a0f4c3a1a24d67.png",
-    "static/media/settingsWithMusic.png": "/about/static/media/settingsWithMusic.042b52fefe48f2370a9a.png",
-    "static/media/settingsWithoutMusic.png": "/about/static/media/settingsWithoutMusic.4212f7caf5a2c034b159.png",
-    "static/media/menuEN.png": "/about/static/media/menuEN.27a34e941977920ec7ff.png",
-    "static/media/menuJP.png": "/about/static/media/menuJP.80d2f5fc370518f7d6a5.png",
-    "static/media/langSelection.png": "/about/static/media/langSelection.5654e4bc49b894371ac5.png",
-    "static/media/gameWin.png": "/about/static/media/gameWin.6a9c6a3cb17e8219765e.png",
-    "static/media/gameMovement.png": "/about/static/media/gameMovement.6ac0df2f600ff849ee22.png",
-    "static/media/gameInitial.png": "/about/static/media/gameInitial.12acdef958d1fac2e077.png",
+    "static/media/rules.jpg": "/about/static/media/rules.c3053f86f1be9a49a787.jpg",
+    "static/media/credits.jpg": "/about/static/media/credits.73797acc0e25b3adad48.jpg",
+    "static/media/gameWin.jpg": "/about/static/media/gameWin.dc47cfdc6cddd41818cf.jpg",
+    "static/media/gameMovement.jpg": "/about/static/media/gameMovement.e11485905fbae877f490.jpg",
+    "static/media/gameInitial.jpg": "/about/static/media/gameInitial.a3fa1a8e07dc516ffedc.jpg",
+    "static/media/settingsWithMusic.jpg": "/about/static/media/settingsWithMusic.0fc12b74fc31fe89d22d.jpg",
+    "static/media/settingsWithoutMusic.jpg": "/about/static/media/settingsWithoutMusic.aae72f0219a35306f415.jpg",
+    "static/media/menuEN.jpg": "/about/static/media/menuEN.1822a9e4d4c41c4658ff.jpg",
+    "static/media/menuJP.jpg": "/about/static/media/menuJP.a5af25661802f799abb4.jpg",
     "static/media/splash.png": "/about/static/media/splash.9986bd769a111f7b9afa.png",
+    "static/media/langSelection.jpg": "/about/static/media/langSelection.a956bd71eb51d5201eba.jpg",
+    "static/media/newGameType2.jpg": "/about/static/media/newGameType2.3f45204db8e73b7f98f9.jpg",
+    "static/media/themeUsage.jpg": "/about/static/media/themeUsage.3d38955b62ebfbf30e8f.jpg",
+    "static/media/gameSelection.jpg": "/about/static/media/gameSelection.32da35bd9802b950a76b.jpg",
+    "static/media/themeSelection.jpg": "/about/static/media/themeSelection.1a58d33ffa4312311624.jpg",
     "index.html": "/about/index.html"
   },
   "entrypoints": [
-    "static/css/main.33e41fd4.css",
-    "static/js/main.1b9487da.js"
+    "static/css/main.9f58b249.css",
+    "static/js/main.d3a5ec36.js"
   ]
 }

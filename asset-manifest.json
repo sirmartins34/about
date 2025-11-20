@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/about/static/css/main.f4e0f44e.css",
-    "main.js": "/about/static/js/main.97e5befe.js",
+    "main.js": "/about/static/js/main.1e945e2d.js",
     "static/js/685.8637015c.chunk.js": "/about/static/js/685.8637015c.chunk.js",
     "static/media/rules.jpg": "/about/static/media/rules.c3053f86f1be9a49a787.jpg",
     "static/media/credits.jpg": "/about/static/media/credits.73797acc0e25b3adad48.jpg",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.f4e0f44e.css",
-    "static/js/main.97e5befe.js"
+    "static/js/main.1e945e2d.js"
   ]
 }
